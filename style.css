@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* header starts */
+li > a {
+  text-decoration: none;
+  padding: 3px 34px;
+  /* color: white; */
+  display: block;
+}
+li > a:hover {
+  border-radius: 2px;
+  color: blue;
+  border-radius: 10px;
+  border: 3px solid green;
+  background-color: rgb(139, 44, 44);
+}
+
+ul > li {
+  list-style: none;
+}
+
+#navbar {
+  display: flex;
+  /* border: 3px solid red; */
+  position: relative;
+}
+
+#list {
+  display: flex;
+  /* border: 3px solid green; */
+  align-items: center;
+}
+
+div#logo > img {
+  width: 76px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  left: 0px;
+  top: 0px;
+}
+
+/* Section starts from here */
+#home {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid green; */
+  padding: 0px 4px;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 115px; */
+  height: 232px; /* background: url("bg.jpg"); */
+}
+#home::before {
+  content: "";
+  background: url("bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 533px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
+}
+.primary-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  /* margin: 2px ; */
+}
+.secondary-heading {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.btn {
+  border: 3px solid red;
+  border-radius: 6px;
+  background-color: #9ed5c3;
+}
+
+/* Second Section Starts Here */
+#services .box {
+  border: 3px solid green;
+  height: 234px;
+  /* /* width: 45px; */
+  width: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid red;
+  border-radius: 23px;
+  background-color: #e3cbcb;
+}
+#services {
+  display: flex;
+  justify-content: center;
+}
+#services .box img {
+  height: 157px;
+  width: 173px;
+}
+#services-section {
+  background-color: #9ed5c3;
+  height: 20rem;
+}
+
+/* client section starts from here */
+.clients-item {
+  height: 233px;
+  width: 258px;
+  /* border: 5px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item img {
+  height: 190px;
+  width: 242px;
+}
+#clients {
+  display: flex;
+  justify-content: space-around;
+}
+/* #client-section{
+  background: url("bg1.jpg")no-repeat center center/cover;
+} */
+#client-section {
+  content: "";
+  background: url("bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 49%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  /* left: 0px; */
+  /* top: 0px; */
+}
+#client-section {
+  position: relative;
+}
+
+/* Contact Section starts from here */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  background: url("contact.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.form-Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 23px; */
+}
+#contact-box input,
+#contact-box textarea {
+  padding: 0.5rem;
+  width: 140%;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+form.form-Contact div > label {
+  font-size: 1rem;
+}
+
+/* footer section */
+footer #end {
+  text-align: center;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 12px 4px;
+}
